@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url(font/Outfit-Light.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    overflow: hidden;
+}
+
+
+
+.scrolls {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8rem;
+    height: 8rem;
+
+}
+
+.top,
+.bottom {
+    font-family: 'Outfit';
+    font-weight: 100;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    text-align: center;
+    /* overflow: hidden; */
+}
+
+
+
+.bottom {
+    background-color: transparent;
+    z-index: 2;
+    color: white;
+    -webkit-text-stroke: .5px black;
+    text-stroke: .5px black;
+    clip-path: polygon(130% 100%, 170% 100%, 180% 200%, 140% 200%)
+}
